@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1>dom doma dom events</h1>
+    <h1>bbbb</h1>
     <!-- option 1 for event handler -->
     <button onclick="console.log(7)">Click me</button>
     <button onclick="console.log(63)">Another button</button>
@@ -19,7 +20,23 @@
      <br>
      <button id="btn-make-blue">Make Blue</button>
      <button id="btn-make-purple">Make purple</button>
+     
+     <br> <br>
+     <!-- option 4: addEventListener -->
+      <button id="btn-make-gold">Make Gold</button>
+     <button id="btn-make-green">Make Green</button>
+     <button id="btn-make-black">Make Black</button>
+
      <script>
+    document.getElementById('btn-make-green').addEventListener('click', function makeGreen(){    document.body.style.backgroundColor='Green'
+    }
+)
+document.getElementById('btn-make-gold').addEventListener('click', function btnmakegold(){
+document.body.style.backgroundColor='gold'
+})
+document.getElementById('btn-make-black').addEventListener('click', function makeblack(){
+    document.body.style.color='black'
+})
     
      </script>
     <script src="./ja/events.js"></script>
