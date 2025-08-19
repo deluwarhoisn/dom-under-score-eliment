@@ -15,5 +15,14 @@
         <li class="item">My Awesom item - 5</li>
         <li class="item">My Awesom item - 6</li>
     </ol>
+
+    <script>
+        const items = document.getElementsByClassName('item');
+        for(const item of items){
+            item.addEventListener('click', function(event){
+                console.log(event.target)
+            })
+        }
+    </script>
 </body>
 </html>
